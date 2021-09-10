@@ -1,0 +1,32 @@
+/* main-nav */
+.main-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px 0;
+}
+.main-nav-list {
+  padding: 20px;
+}
+.main-nav-item > a {
+  position: relative;
+  font-size: 78px;
+  font-weight: 700;
+  color: lawngreen;
+  line-height: 1;
+}
+.main-nav-item > a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 10px;
+  background-color: lawngreen;
+  transition: width 200ms ease-in-out;
+}
+.main-nav-item:hover > a::before {
+  width: 100%;
+}

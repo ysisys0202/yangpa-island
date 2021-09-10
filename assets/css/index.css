@@ -30,3 +30,24 @@
 .main-nav-item:hover > a::before {
   width: 100%;
 }
+/* citizens */
+.citizens {
+  position: relative;
+  margin-top: 180px;
+}
+.citizen-list {
+  align-items: baseline;
+}
+.citizen-item {
+  cursor: pointer;
+}
+.citizen-item img {
+  filter: blur(4px);
+  transition: filter 300ms ease-in-out;
+}
+.citizen-item.swiper-slide-active img {
+  filter: blur(0);
+}
+.citizens .swiper-slide {
+  vertical-align: bottom;
+}
